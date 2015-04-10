@@ -15,14 +15,9 @@ if ($type_id == 1) {
   $type = "Customer";
 }
 
-session_start()
-$_SESSION['submitted'] = true;
-$_SESSION['type_id'] = 1;
-$_SESSION['email'] = $visitor_email;
-
 $email_to = "julia@drnkmxr.com";
 $email_subject = "New Form submission";
-$email_body = "Email: $visitor_email\nRole: $type"
+$email_body = "Email: $visitor_email\nRole: $type";
 
 $headers = "From: $visitor_email \r\n";
 $headers .= "Reply-To: $visitor_email \r\n";
