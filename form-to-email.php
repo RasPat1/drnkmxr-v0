@@ -1,19 +1,7 @@
 <?php
-//if(!isset($_POST['submit']))
-{
-	//This page should not be accessed directly. Need to submit the form.
-	//echo "error; you need to submit the form!";
-}
-$name = $_POST['type'];
-$visitor_email = $_POST['email'];
-$message = $_POST['name'];
 
-//Validate first
-//if(empty($name)||empty($visitor_email)) 
-{
-  //  echo "Name and email are mandatory!";
-  //  exit;
-}
+$type_id = $_POST['type'];
+$visitor_email = $_POST['email'];
 
 if(IsInjected($visitor_email))
 {
@@ -21,19 +9,29 @@ if(IsInjected($visitor_email))
     exit;
 }
 
-$email_from = 'julia@drnkmxr.com';//<== update the email address
-$email_subject = "New Form submission";
-$email_body = "You have received a new message from the user $name.\n".
-    "Here is the message:\n $message".
-    
-$to = " julia@drnkmxr.com";//<== update the email address
-$headers = "From: $visitor \r\n";
-$headers .= "Reply-To: $visitor_email \r\n";
-//Send the email!
-mail($to,$email_subject,$email_body,$headers);
-//done. redirect to thank-you page.
-header('Location: thank-you.html');
+if ($type_id == 1) {
+  $type = "Bartender";
+} else if ($type_id == 2) {
+  $type = "Customer";
+}
 
+session_start()
+$_SESSION['submitted'] = true;
+$_SESSION['type_id'] = 1;
+$_SESSION['email'] = $visitor_email;
+
+$email_to = "julia@drnkmxr.com";
+$email_subject = "New Form submission";
+$email_body = "Email: $visitor_email\nRole: $type"
+
+$headers = "From: $visitor_email \r\n";
+$headers .= "Reply-To: $visitor_email \r\n";
+
+//Send the email!
+mail($email_to, $email_subject, $email_body, $headers);
+
+//done. redirect to thank-you page.
+header('Location: index.html');
 
 // Function to validate against any email injection attempts
 function IsInjected($str)
@@ -57,5 +55,4 @@ function IsInjected($str)
     return false;
   }
 }
-   
 ?> 
