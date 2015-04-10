@@ -15,18 +15,20 @@ if ($type_id == 1) {
   $type = "Customer";
 }
 
-$email_to = "julia@drnkmxr.com";
-$email_subject = "New Form submission";
-$email_body = "Email: $visitor_email\nRole: $type";
+if ($vistor_email) {
+  $email_to = "julia+signups@drnkmxr.com";
+  $email_subject = "New Form submission";
+  $email_body = "Email: $visitor_email\nRole: $type";
 
-$headers = "From: $visitor_email \r\n";
-$headers .= "Reply-To: $visitor_email \r\n";
+  $headers = "From: $visitor_email \r\n";
+  $headers .= "Reply-To: $visitor_email \r\n";
 
-//Send the email!
-mail($email_to, $email_subject, $email_body, $headers);
+  //Send the email!
 
-$_GET['submitted'] = true;
+  mail($email_to, $email_subject, $email_body, $headers);
 
+  $_GET['submitted'] = true;
+}
 //done. redirect to thank-you page.
 header('Location: index.php?submitted=1');
 
