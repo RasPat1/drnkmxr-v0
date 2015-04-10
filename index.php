@@ -111,35 +111,35 @@
 				</div>
 			</div>
 		</section>
+
 		<section class="download" id="download">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12">
-						
-              
-                        
                         <div class="container demo-1">	
-			<div class="main clearfix">
-				<form id="nl-form" class="nl-form" action="form-to-email.php" method="post">
-					I want to know when you're up! I am a                  
-					<select name="type">
-						<option value="1" selected>Bartender</option>
-						<option value="2">Host</option>
-					</select>
-					and my email is <input type="text" name="email" value="" placeholder="test@example.com" />
-					<div class="nl-submit-wrap">
-						
-                        
-                        <button class="nl-submit" type="submit" value="send">Let me know!</button>
-					</div>
-					<div class="nl-overlay"></div>
-				</form>
-			</div>
-		</div><!-- /container -->
-		<script src="js/nlform.js"></script>
-		<script>
-			var nlform = new NLForm( document.getElementById( 'nl-form' ) );
-		</script>
+							<div class="main clearfix">
+								<?php if (!$_GET['submitted']) : ?>
+								<form id="nl-form" class="nl-form" action="form-to-email.php" method="post">
+									I want to know when you're up! I am a                  
+									<select name="type">
+										<option value="1" selected>Bartender</option>
+										<option value="2">Host</option>
+									</select>
+									and my email is <input type="text" name="email" value="" placeholder="test@example.com" />
+									<div class="nl-submit-wrap">  
+				                        <button class="nl-submit" type="submit" value="send">Let me know!</button>
+									</div>
+									<div class="nl-overlay"></div>
+								</form>
+								<?php else: ?>
+								<div class="success-message">Thanks for the submission!  We'll get back to you with more info!</div>
+								<?php endif; ?>
+							</div>
+						</div><!-- /container -->
+						<script src="js/nlform.js"></script>
+						<script>
+							var nlform = new NLForm( document.getElementById( 'nl-form' ) );
+						</script>
 					</div>                    
 				</div>
 			</div>

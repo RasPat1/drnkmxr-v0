@@ -25,8 +25,10 @@ $headers .= "Reply-To: $visitor_email \r\n";
 //Send the email!
 mail($email_to, $email_subject, $email_body, $headers);
 
+$_GET['submitted'] = true;
+
 //done. redirect to thank-you page.
-header('Location: index.html');
+header('Location: index.php?submitted=1');
 
 // Function to validate against any email injection attempts
 function IsInjected($str)

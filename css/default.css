@@ -45,6 +45,11 @@ body, html { font-size: 40%; padding: 0; margin: 0;}
 	max-width: 100%;
 }
 
+.success-message {
+	font-size: 22px;
+	line-height: 25px;
+	text-align: center;
+}
 
 
 }
