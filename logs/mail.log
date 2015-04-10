@@ -1,0 +1,4 @@
+2015-04-09 20:27:13 u80382060 1IoPrg-1ZQFMx43Ss-012Ty2 |< REMOTE=65.209.36.34 SCRIPT=/form-to-email.php -- /usr/sbin/sendmail -t -i
+2015-04-09 20:27:13 u80382060 1IoPrg-1ZQFMx43Ss-012Ty2 WW invalid sender address: "  "
+2015-04-09 20:27:13 u80382060 1IoPrg-1ZQFMx43Ss-012Ty2 <= S=cgi-mailer-bounces-569603043@perfora.net SZ=616 D=0 SID=569603043
+2015-04-09 20:27:14 u80382060 1IoPrg-1ZQFMx43Ss-012Ty2 => julia@drnkmxr.com msmtp.perfora.net[172.19.143.3] 250 Requested mail action okay, completed: id=0MeAhM-1Z2xqx49Dq-00PrYv
