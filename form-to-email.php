@@ -15,7 +15,7 @@ if ($type_id == 1) {
   $type = "Customer";
 }
 
-if ($vistor_email) {
+if ($visitor_email) {
   $email_to = "julia+signups@drnkmxr.com";
   $email_subject = "New Form submission";
   $email_body = "Email: $visitor_email\nRole: $type";
