@@ -118,7 +118,7 @@
 					<div class="col-md-12">
                         <div class="container demo-1">	
 							<div class="main clearfix">
-								<?php if (!$_GET['submitted']) : ?>
+								<?php if (!$_GET['s']) : ?>
 								<form id="nl-form" class="nl-form" action="form-to-email.php" method="post">
 									I want to know when you're up! I am a                  
 									<select name="type">

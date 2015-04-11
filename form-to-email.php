@@ -27,10 +27,12 @@ if ($visitor_email) {
 
   mail($email_to, $email_subject, $email_body, $headers);
 
-  $_GET['submitted'] = true;
+  header('Location: /?s=1');
+} else {
+  //done. redirect to thank-you page.
+  header('Location: /');
 }
-//done. redirect to thank-you page.
-header('Location: index.php?submitted=1');
+
 
 // Function to validate against any email injection attempts
 function IsInjected($str)
