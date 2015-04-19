@@ -75,7 +75,7 @@
 							</div>
 							<div class="feature-content">
 								<h1>BROWSE</h1>
-								<p>Built using HTML5/CSS3 and jQuery, and built using one of the world's most powerful CSS frameworks available, Bootstrap.</p>
+								<p>Discover incredible drink menus stirred up by our staff of expert mixologists.</p>
 							</div>
 						</div>
 						<div class="col-md-4 feature-2 wp2 delay-05s">
@@ -83,7 +83,7 @@
 							</div>
 							<div class="feature-content">
 								<h1>BOOK</h1>
-								<p>Perfect if you run your own start-up, product or service. Boxify can showcase your business converting your visits to income.</p>
+								<p>Reserve a time for a specialty mixologist to arrive at your event.  We’ll take care of dropping off the perfect amount of liquor and supplies.</p>
 							</div>
 						</div>
 						<div class="col-md-4 feature-3 wp2 delay-1s">
@@ -91,7 +91,7 @@
 							</div>
 							<div class="feature-content">
 								<h1>BOOZE</h1>
-								<p>As aways, download Boxify for free exclusively from Codrops. If you love Boxify and want to thank me, simply buy me a beer</a>. </p>
+								<p>Enjoy your party, we’ll keep the glasses full.  And even clean them up after.</p>
 							</div>
 						</div>
 
@@ -104,8 +104,7 @@
 				<div class="texture-overlay"></div>
 				<div class="container">
 							<h1>WE LOVE A PARTY</h1>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a lorem quis neque interdum consequat ut sed sem. Duis quis tempor nunc. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>		
-							</blockquote>
+							<p class="blockquote party-love">"The bartender brings class and sophistication." -<a href="http://www.nytimes.com/2010/12/09/fashion/09bartenders.html" class="blockquote-link">Dustin Terry</a></p>
 						</div>
 					</div>
 				</div>

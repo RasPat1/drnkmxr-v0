@@ -466,6 +466,7 @@ a:hover, a:focus {
     width: 100%;
     height: 100%;
     background-image: url(../img/grid.png);
+    pointer-events: none;
 }
 
 /* ==========================================================================
