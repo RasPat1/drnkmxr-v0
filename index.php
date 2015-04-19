@@ -120,12 +120,12 @@
 							<div class="main clearfix">
 								<?php if (!$_GET['s']) : ?>
 								<form id="nl-form" class="nl-form" action="form-to-email.php" method="post">
-									I want to know when you're up! I am a                  
+									I am a                  
 									<select name="type">
-										<option value="1" selected>Bartender</option>
-										<option value="2">Host</option>
+										<option value="1" selected>bartender</option>
+										<option value="2">host</option>
 									</select>
-									and my email is <input type="text" name="email" value="" placeholder="test@example.com" />
+									and my name is <input type="text" name="email" value="" placeholder="Ernest Hemingway" />. Send me an email at <input type="text" name="email" value="" placeholder="eHemingway@drnkmxr.com" /> when you're up!
 									<div class="nl-submit-wrap">  
 				                        <button class="nl-submit" type="submit" value="send">Let me know!</button>
 									</div>
@@ -140,7 +140,7 @@
 						<script>
 							var nlform = new NLForm( document.getElementById( 'nl-form' ) );
 						</script>
-					</div>                    
+					</div>
 				</div>
 			</div>
 		</section>
