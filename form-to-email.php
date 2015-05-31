@@ -2,7 +2,7 @@
 
 $type_id = $_POST['type'];
 $visitor_email = $_POST['email'];
-$customer_name = $_POST['name']
+$customer_name = $_POST['name'];
 
 if(IsInjected($visitor_email))
 {
@@ -17,7 +17,7 @@ if ($type_id == 1) {
 }
 
 if ($visitor_email) {
-  $email_to = "julia+signups@drnkmxr.com";
+  $email_to = "julia+signups@drnkmxr.com, ras+debug@drnkmxr.com";
   $email_subject = "New Form submission";
   $email_body = "Email: $visitor_email\nRole: $type";
   $email_body .= "Name: $name";
